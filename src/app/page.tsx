@@ -51,7 +51,7 @@ export default function Home() {
           <Button className="w-full text-lg py-6" onClick={downloadApk}>
             <Download className="mr-2 h-5 w-5" /> Download APK
           </Button>
-          <div className="grid grid-cols-2 gap-4 mt-6">
+          <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="flex flex-col items-center text-center">
               <Clock className="h-8 w-8 text-green-500 mb-2" />
               <h3 className="font-semibold">Convinient Ordering</h3>
