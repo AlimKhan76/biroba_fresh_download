@@ -16,7 +16,7 @@ export default function Home() {
     const apkUrl = process.env.NEXT_PUBLIC_APK_URL || "";
     const link = document.createElement("a");
     link.href = apkUrl;
-    link.download = "app-release.apk"; // Optional: Set a custom name for the APK
+    link.download = "Biroba-Fresh.apk"; // Optional: Set a custom name for the APK
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link); // Clean up the element
