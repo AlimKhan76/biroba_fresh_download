@@ -1,15 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Download, Clock, Calendar } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const downloadApk = () => {
@@ -23,52 +18,67 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-100 to-green-200 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md">
-        <title>Biroba Fresh</title>
-        <CardHeader className="text-center">
-          <div className="mx-auto bg-green-500 rounded-full   w-20 h-20 flex items-center justify-center mb-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-white p-4">
+      <title>Biroba Fresh</title>
+      <Card className="w-full max-w-lg">
+        <CardHeader className="space-y-2 text-center">
+          <div className="mx-auto w-20 h-20 relative mb-2">
             <Image
-              src={"/favicon.ico"}
-              alt=""
-              width={100}
-              height={100}
-              className="w-full h-full object-cover border rounded-full text-white"
+              src="/favicon.ico"
+              alt="Biroba Fresh Logo"
+              fill
+              className="object-contain"
             />
           </div>
-          <CardTitle className="text-3xl font-bold text-green-800">
+          <h1 className="text-3xl font-bold tracking-tight text-green-700">
             Biroba Fresh
-          </CardTitle>
-          <CardDescription className="text-green-600">
+          </h1>
+          <p className="text-green-600">
             Your Daily Hotel Supplies Partner in Mumbai
-          </CardDescription>
+          </p>
         </CardHeader>
-        <CardContent className="space-y-4">
-          <p className="text-center text-gray-600">
-            Streamline your hotel{"'"}s daily ordering process with Biroba
+        <CardContent className="space-y-6">
+          <p className="text-center text-muted-foreground">
+            Streamline your hotel&apos;s daily ordering process with Biroba
             Fresh. Download our app now!
           </p>
-          <Button className="w-full text-lg py-6" onClick={downloadApk}>
-            <Download className="mr-2 h-5 w-5" /> Download APK
-          </Button>
-          <div className="grid md:grid-cols-2 gap-4 mt-6">
-            <div className="flex flex-col items-center text-center">
-              <Clock className="h-8 w-8 text-green-500 mb-2 " />
-              <h3 className="font-semibold">Convinient Ordering</h3>
-              <p className="text-sm text-gray-500">
+
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="flex flex-col items-center gap-2 p-4 rounded-lg bg-green-50">
+              <Clock className="h-8 w-8 text-green-600" />
+              <h3 className="font-semibold">Convenient Ordering</h3>
+              <p className="text-sm text-center text-muted-foreground">
                 Order during peak hotel hours
               </p>
             </div>
-            <div className="flex flex-col items-center text-center">
-              <Calendar className="h-8 w-8 text-green-500 mb-2" />
+            <div className="flex flex-col items-center gap-2 p-4 rounded-lg bg-green-50">
+              <Calendar className="h-8 w-8 text-green-600" />
               <h3 className="font-semibold">Reliable Schedule</h3>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-center text-muted-foreground">
                 Consistent daily deliveries
               </p>
             </div>
+          </div>
+
+          <div className="space-y-4">
+            <Button className="w-full h-12 text-lg gap-2 bg-green-600 hover:bg-green-700">
+              <Download className="w-5 h-5" onClick={downloadApk} />
+              Download APK
+            </Button>
+
+            <p className="text-xs text-center text-muted-foreground">
+              By downloading, you agree to our{" "}
+              <Link
+                href="/terms-and-conditions"
+                className="underline underline-offset-2 hover:text-green-600"
+              >
+                Terms & Conditions
+              </Link>
+            </p>
           </div>
         </CardContent>
       </Card>
     </div>
   );
 }
+
