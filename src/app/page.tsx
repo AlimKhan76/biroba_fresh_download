@@ -61,8 +61,11 @@ export default function Home() {
           </div>
 
           <div className="space-y-4">
-            <Button className="w-full h-12 text-lg gap-2 bg-green-600 hover:bg-green-700">
-              <Download className="w-5 h-5" onClick={downloadApk} />
+            <Button
+              className="w-full h-12 text-lg gap-2 bg-green-600 hover:bg-green-700"
+              onClick={downloadApk}
+            >
+              <Download className="w-5 h-5" />
               Download APK
             </Button>
 
