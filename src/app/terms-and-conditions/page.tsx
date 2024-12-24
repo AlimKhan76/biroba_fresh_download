@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function TermsAndConditions() {
   return (
@@ -26,12 +26,13 @@ export default function TermsAndConditions() {
                   of Rule 3 (1) of the Information Technology (Intermediaries
                   guidelines) Rules, 2011 that require publishing the rules and
                   regulations, privacy policy, and Terms of Use for access or
-                  usage of domain name{" "}
-                  <Link href={"/"} target="_blank">
+                  usage of our app{" "}
+                  {/* <Link href={"/"} target="_blank">
                     <strong>https://biroba-fresh.vercel.app/</strong>
-                  </Link>{" "}
-                  ({"'Website'"}), including the related mobile site and mobile
-                  application (hereinafter referred to as {"'Platform'"}).
+                  </Link>{" "} */}
+                  {/* ({"'Website'"}), including the related mobile site and mobile
+                  application  */}
+                  (hereinafter referred to as {"'Platform'"}).
                 </li>
                 <li>
                   The Platform is owned by{" "}
@@ -191,8 +192,8 @@ export default function TermsAndConditions() {
                 (collectively
                 <strong>{` "BIROBA VEGETABLE SUPPLIERS`}</strong>, we, our, us
                 {'"'}) collect, use, share, protect or otherwise process your
-                information/ personal data through our website
-                <strong> https://biroba-fresh.vercel.app/ </strong>
+                information/ personal data through our app
+                {/* <strong> https://biroba-fresh.vercel.app/ </strong> */}
                 (hereinafter referred to as <strong>Platform</strong>). Please
                 note that you may be able to browse certain sections of the
                 Platform without registering with us.We do not offer any
@@ -389,6 +390,11 @@ export default function TermsAndConditions() {
             <section id="refund-and-cancellation-policy">
               <h2>Refund and Cancellation Policy</h2>
               <p>
+                Once the refund request is approved, The Refunded Amount will be
+                processed and credited within <strong>10 days</strong> to the
+                original mode of payment.
+              </p>
+              {/* <p>
                 This refund and cancellation policy outlines how you can cancel
                 or seek a refund for a product / service that you have purchased
                 through the Platform. Under this policy
@@ -434,54 +440,22 @@ export default function TermsAndConditions() {
                   it will take <strong>1 day </strong> for the refund to be
                   processed to you.
                 </li>
-              </ol>
+              </ol> */}
             </section>
 
             <section id="return-policy">
               <h2>Return Policy</h2>
               <p>
-                We offer refund / exchange within first <strong>1 day </strong>{" "}
-                from the date of your purchase. If <strong>1 day </strong> have
-                passed since your purchase, you will not be offered a return,
-                exchange or refund of any kind. In order to become eligible for
-                a return or an exchange, (i) the purchased item should be unused
-                and in the same condition as you received it, (ii) the item must
-                have original packaging, (iii) if the item that you purchased on
-                a sale, then the item may not be eligible for a return /
-                exchange. Further, only such items are replaced by us (based on
-                an exchange request), if such items are found defective or
-                damaged.
-              </p>
-              <p>
-                You agree that there may be a certain category of products /
-                items that are exempted from returns or refunds. Such categories
-                of the products would be identified to you at the item of
-                purchase. For exchange / return accepted request(s) (as
-                applicable), once your returned product / item is received and
-                inspected by us, we will send you an email to notify you about
-                receipt of the returned / exchanged product. Further. If the
-                same has been approved after the quality check at our end, your
-                request (i.e. return / exchange) will be processed in accordance
-                with our policies.
+                You can initiate a return within <strong>7</strong> days from
+                the date of delivery.
               </p>
             </section>
 
             <section id="shipping-policy">
               <h2>Shipping Policy</h2>
               <p>
-                The orders for the user are shipped through registered domestic
-                courier companies and/or speed post only. Orders are shipped
-                within <strong>1 day </strong> from the date of the order and/or
-                payment or as per the delivery date agreed at the time of order
-                confirmation and delivering of the shipment, subject to courier
-                company / post office norms. Platform Owner shall not be liable
-                for any delay in delivery by the courier company / postal
-                authority. Delivery of all orders will be made to the address
-                provided by the buyer at the time of purchase. Delivery of our
-                services will be confirmed on your email ID as specified at the
-                time of registration. If there are any shipping cost(s) levied
-                by the seller or the Platform Owner (as the case be), the same
-                is not refundable.
+                All products will be delivered within <strong>2-3 </strong>{" "}
+                business days
               </p>
             </section>
           </div>
