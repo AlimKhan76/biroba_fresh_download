@@ -73,6 +73,7 @@ export default function Home() {
               By downloading, you agree to our{" "}
               <Link
                 href="/terms-and-conditions"
+                target="_blank"
                 className="underline underline-offset-2 hover:text-green-600"
               >
                 Terms & Conditions

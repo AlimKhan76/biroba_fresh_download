@@ -1,21 +1,10 @@
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function TermsAndConditions() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-strong from-green-50 to-white p-4">
       <title>Biroba Fresh | Policies</title>
       <div className="container mx-auto max-w-4xl flex-grow flex flex-col">
-        <header className="py-6">
-          <Link href="/" passHref>
-            <Button variant="ghost" className="gap-2">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Download
-            </Button>
-          </Link>
-        </header>
-
         <main className="flex-grow">
           <div className="prose prose-sm sm:prose lg:prose-lg mx-auto">
             <h1>Policies</h1>
